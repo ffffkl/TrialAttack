@@ -3,6 +3,8 @@ from tensorflow.contrib import slim
 import numpy as np
 import math
 import time
+import sys
+sys.path.append('../')  # 添加上级目录到系统路径
 import utils
 
 flags = tf.flags

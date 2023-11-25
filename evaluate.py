@@ -8,7 +8,11 @@ import numpy as np
 from Dataset import Dataset
 import utils
 from models.SVD import SVD
+import os
 
+directory = 'temp/ml-100k/full/'
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 flags = tf.flags
 FLAGS = flags.FLAGS

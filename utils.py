@@ -39,6 +39,10 @@ def sampling(dataset, num_neg, bpr=False):
     item_input = item_input[:, None]
     rate_input = rate_input[:, None]
     neg_item_input = np.array(t2)[:, None]
+    user_input = user_input.astype(np.int32)
+    item_input = item_input.astype(np.int32)
+    rate_input = rate_input.astype(np.float32)
+
     if (bpr == True):
         return [user_input, item_input, neg_item_input]
     else:
