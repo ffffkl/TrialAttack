@@ -27,3 +27,4 @@ optional arguments:
 ```bash
 python generate_fake.py --dataset ml-100k --gpu 0 --target_index 0
 ```
+1
